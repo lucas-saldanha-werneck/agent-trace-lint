@@ -1,0 +1,16 @@
+[project]
+name = "agent-trace-lint"
+version = "0.1.0"
+description = "Lint LLM agent tool-call traces for replay and retry bugs (offline, stdlib only)"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.scripts]
+agent-trace-lint = "agent_trace_lint.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = ["agent_trace_lint"]

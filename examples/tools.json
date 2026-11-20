@@ -1,0 +1,5 @@
+{
+  "lookup_customer": {"required": ["phone"], "properties": {"phone": "string"}, "idempotent": true},
+  "book_visit": {"required": ["customer_id", "slot"], "properties": {"customer_id": "string", "slot": "string", "idempotency_key": "string"}, "idempotent": false},
+  "open_ticket": {"required": ["customer_id", "summary"], "properties": {"customer_id": "string", "summary": "string", "priority": "integer"}, "idempotent": false}
+}

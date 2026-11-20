@@ -1,0 +1,10 @@
+{"type":"message","role":"user","text":"EXAMPLE DATA, invented. Book me a visit on Friday."}
+{"type":"tool_call","id":"c1","tool":"lookup_customer","args":{"phone":"+55 21 90000-0000"}}
+{"type":"tool_result","call_id":"c1","ok":true}
+{"type":"tool_call","id":"c2","tool":"book_visit","args":{"customer_id":"cust_1","slot":"2026-11-27T10:00"}}
+{"type":"tool_result","call_id":"c2","ok":false,"error":"timeout"}
+{"type":"tool_call","id":"c3","tool":"book_visit","args":{"customer_id":"cust_1","slot":"2026-11-27T10:00"}}
+{"type":"tool_result","call_id":"c3","ok":true}
+{"type":"tool_call","id":"c4","tool":"open_ticket","args":{"customer_id":"cust_1","summary":"gate noise","priority":"high"}}
+{"type":"tool_result","call_id":"c4","ok":true}
+{"type":"tool_call","id":"c5","tool":"send_sms","args":{"to":"x"}}
